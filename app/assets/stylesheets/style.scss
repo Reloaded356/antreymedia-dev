@@ -1,0 +1,9 @@
+@import "neat";
+
+.def-neat-grid {
+  @include grid-container;
+}
+
+.def-neat-grid-single-col {
+  @include grid-column(1);
+}

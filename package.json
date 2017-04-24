@@ -1,0 +1,51 @@
+{
+  "name": "antreymedia-dev",
+  "version": "1.0.0",
+  "description": "personal projects - antreymedia development and research",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Reloaded356/antreymedia-dev.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Reloaded356/antreymedia-dev/issues"
+  },
+  "homepage": "https://github.com/Reloaded356/antreymedia-dev#readme",
+  "devDependencies": {
+    "fs": "0.0.1-security",
+    "glob": "^7.1.1",
+    "globs": "^0.1.3",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-changed": "^3.0.0",
+    "gulp-coffee": "^2.3.4",
+    "gulp-concat": "^2.6.1",
+    "gulp-convert-encoding": "^1.0.0",
+    "gulp-css-condense": "^1.1.2",
+    "gulp-filter": "^5.0.0",
+    "gulp-gzip": "^1.4.0",
+    "gulp-haml-coffee-compile": "0.0.1",
+    "gulp-if": "^2.0.2",
+    "gulp-if-else": "^1.0.3",
+    "gulp-include": "^2.3.1",
+    "gulp-intercept": "^0.1.0",
+    "gulp-notify": "^3.0.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-replace": "^0.5.4",
+    "gulp-rev": "^7.1.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.0",
+    "gulp-uglify": "^2.1.2",
+    "gulp-util": "^3.0.8",
+    "minimist": "^1.2.0"
+  },
+  "dependencies": {
+    "del": "^2.2.2"
+  }
+}
