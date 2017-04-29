@@ -2,8 +2,14 @@
 
 .def-neat-grid {
   @include grid-container;
+  width: 800px;
 }
 
 .def-neat-grid-single-col {
   @include grid-column(1);
+}
+
+.test-class {
+  color: green;
+  border: 1px solid yellow;
 }

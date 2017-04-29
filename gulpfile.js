@@ -46,9 +46,6 @@ var gulp = require('gulp'),
   }),
 
 
-
-
-
   getSassPaths = function() {
     var glob = '/**/**',
       paths = ['./app/cells' + glob, './vendor/assets/bower_components' + glob, options.gemPath + glob];
@@ -253,7 +250,7 @@ gulp.task('fonts', ['clean-fonts'], function(cb) {
 
 gulp.task('default', ['clean', 'js', 'sass', 'fonts'], function(cb) {
   var files = ['./public/assets/js/*.js', './public/assets/css/*.css'],
-    stream, awsOptions;
+    stream;
   if(production()) {
 
     stream = gulp.src(files, { base: './public/assets' })
