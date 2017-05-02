@@ -14,6 +14,13 @@
  *= require_self
  */
 /* line 3, app/assets/stylesheets/_style.scss */
+li {
+  display: inline-flex;
+  border: 2px solid black;
+  width: 8em;
+  margin-top: 1em; }
+
+/* line 10, app/assets/stylesheets/_style.scss */
 .def-neat-grid {
   width: 800px; }
   /* line 25, vendor/assets/bower_components/neat/core/neat/mixins/_grid-container.scss */
@@ -22,21 +29,25 @@
     content: "";
     display: block; }
 
-/* line 8, app/assets/stylesheets/_style.scss */
+/* line 15, app/assets/stylesheets/_style.scss */
 .def-neat-grid-single-col {
   width: calc(8.33333% - 21.66667px);
   float: left;
   margin-left: 20px; }
 
-/* line 12, app/assets/stylesheets/_style.scss */
+/* line 19, app/assets/stylesheets/_style.scss */
+.main-nav {
+  text-align: center; }
+
+/* line 23, app/assets/stylesheets/_style.scss */
 .work {
   text-align: center; }
 
-/* line 16, app/assets/stylesheets/_style.scss */
+/* line 27, app/assets/stylesheets/_style.scss */
 .education-header {
   text-align: center; }
 
-/* line 24, app/assets/stylesheets/_style.scss */
+/* line 35, app/assets/stylesheets/_style.scss */
 .main-slider {
   color: green;
   border: 1px solid yellow; }

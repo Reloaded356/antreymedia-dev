@@ -1,5 +1,12 @@
 @import "neat";
 
+li {
+  display: inline-flex;
+  border: 2px solid black;
+  width: 8em;
+  margin-top: 1em;
+}
+
 .def-neat-grid {
   @include grid-container;
   width: 800px;
@@ -7,6 +14,10 @@
 
 .def-neat-grid-single-col {
   @include grid-column(1);
+}
+
+.main-nav {
+  text-align: center;
 }
 
 .work {
@@ -18,7 +29,7 @@
 }
 
 .education-container {
-  
+
 }
 
 .main-slider {
