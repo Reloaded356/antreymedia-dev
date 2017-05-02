@@ -9,6 +9,11 @@
   }
 }
 
+main {
+  margin-left: 1.5em;
+  margin-right: 1.5em;
+}
+
 header {
   width: 1200px;
   margin-left: auto;
@@ -23,8 +28,14 @@ li {
   border: 2px solid black;
   width: 8em;
   margin-top: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 35px;
+  height: 3em;
+  padding-top: .8em;
   @include grid-media($mobile) {
     width: 6em;
+    padding-left: 23px;
   }
 }
 
@@ -35,7 +46,7 @@ li {
 .main-nav {
   text-align: center;
   float: right;
-  padding-right: 24%;
+  padding-right: 22%;
   @include grid-media($mobile) {
     margin-left: auto;
     margin-right: auto;
