@@ -29,7 +29,15 @@
   margin-left: 20px; }
 
 /* line 12, app/assets/stylesheets/_style.scss */
-.test-class {
+.work {
+  text-align: center; }
+
+/* line 16, app/assets/stylesheets/_style.scss */
+.education-header {
+  text-align: center; }
+
+/* line 24, app/assets/stylesheets/_style.scss */
+.main-slider {
   color: green;
   border: 1px solid yellow; }
 
