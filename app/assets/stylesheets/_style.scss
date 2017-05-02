@@ -1,15 +1,31 @@
 @import "neat", "vars";
 
+.def-neat-grid {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  @include grid-media($mobile) {
+    width: 275px;
+  }
+}
+
+header {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  @include grid-media($mobile) {
+    width: 375px;
+  }
+}
+
 li {
   display: inline-flex;
   border: 2px solid black;
   width: 8em;
   margin-top: 1em;
-}
-
-.def-neat-grid {
-  @include grid-container;
-  width: 800px;
+  @include grid-media($mobile) {
+    width: 6em;
+  }
 }
 
 .def-neat-grid-single-col {
@@ -18,10 +34,13 @@ li {
 
 .main-nav {
   text-align: center;
-  float: right;   
-  padding-right: 33%;
+  float: right;
+  padding-right: 24%;
   @include grid-media($mobile) {
-    padding-right: 4%;
+    margin-left: auto;
+    margin-right: auto;
+    float: none;
+    padding: 0;
   }
 }
 
@@ -40,12 +59,18 @@ li {
 .left-head {
   display: inline-block;
   padding: 1em 2em;
+  @include grid-media($mobile) {
+
+  }
 }
 
 .right-head {
   display: inline-block;
   float: right;
   padding: 1em 2em;
+  @include grid-media($mobile) {
+
+  }
 }
 
 .main-slider {

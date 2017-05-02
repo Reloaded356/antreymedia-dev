@@ -14,57 +14,75 @@
  *= require_self
  */
 /* line 3, app/assets/stylesheets/_style.scss */
+.def-neat-grid {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto; }
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    /* line 3, app/assets/stylesheets/_style.scss */
+    .def-neat-grid {
+      width: 275px; } }
+
+/* line 12, app/assets/stylesheets/_style.scss */
+header {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto; }
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    /* line 12, app/assets/stylesheets/_style.scss */
+    header {
+      width: 375px; } }
+
+/* line 21, app/assets/stylesheets/_style.scss */
 li {
   display: inline-flex;
   border: 2px solid black;
   width: 8em;
   margin-top: 1em; }
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    /* line 21, app/assets/stylesheets/_style.scss */
+    li {
+      width: 6em; } }
 
-/* line 10, app/assets/stylesheets/_style.scss */
-.def-neat-grid {
-  width: 800px; }
-  /* line 25, vendor/assets/bower_components/neat/core/neat/mixins/_grid-container.scss */
-  .def-neat-grid::after {
-    clear: both;
-    content: "";
-    display: block; }
-
-/* line 15, app/assets/stylesheets/_style.scss */
+/* line 31, app/assets/stylesheets/_style.scss */
 .def-neat-grid-single-col {
   width: calc(8.33333% - 2.16667em);
   float: left;
   margin-left: 2em; }
 
-/* line 19, app/assets/stylesheets/_style.scss */
+/* line 35, app/assets/stylesheets/_style.scss */
 .main-nav {
   text-align: center;
   float: right;
-  padding-right: 33%; }
+  padding-right: 24%; }
   @media screen and (min-width: 320px) and (max-width: 767px) {
-    /* line 19, app/assets/stylesheets/_style.scss */
+    /* line 35, app/assets/stylesheets/_style.scss */
     .main-nav {
-      padding-right: 4%; } }
+      margin-left: auto;
+      margin-right: auto;
+      float: none;
+      padding: 0; } }
 
-/* line 28, app/assets/stylesheets/_style.scss */
+/* line 47, app/assets/stylesheets/_style.scss */
 .work {
   text-align: center; }
 
-/* line 32, app/assets/stylesheets/_style.scss */
+/* line 51, app/assets/stylesheets/_style.scss */
 .education-header {
   text-align: center; }
 
-/* line 40, app/assets/stylesheets/_style.scss */
+/* line 59, app/assets/stylesheets/_style.scss */
 .left-head {
   display: inline-block;
   padding: 1em 2em; }
 
-/* line 45, app/assets/stylesheets/_style.scss */
+/* line 67, app/assets/stylesheets/_style.scss */
 .right-head {
   display: inline-block;
   float: right;
   padding: 1em 2em; }
 
-/* line 51, app/assets/stylesheets/_style.scss */
+/* line 76, app/assets/stylesheets/_style.scss */
 .main-slider {
   color: green;
   border: 1px solid yellow; }
