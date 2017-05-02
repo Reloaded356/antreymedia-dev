@@ -31,23 +31,40 @@ li {
 
 /* line 15, app/assets/stylesheets/_style.scss */
 .def-neat-grid-single-col {
-  width: calc(8.33333% - 21.66667px);
+  width: calc(8.33333% - 2.16667em);
   float: left;
-  margin-left: 20px; }
+  margin-left: 2em; }
 
 /* line 19, app/assets/stylesheets/_style.scss */
 .main-nav {
-  text-align: center; }
+  text-align: center;
+  float: right;
+  padding-right: 33%; }
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    /* line 19, app/assets/stylesheets/_style.scss */
+    .main-nav {
+      padding-right: 4%; } }
 
-/* line 23, app/assets/stylesheets/_style.scss */
+/* line 28, app/assets/stylesheets/_style.scss */
 .work {
   text-align: center; }
 
-/* line 27, app/assets/stylesheets/_style.scss */
+/* line 32, app/assets/stylesheets/_style.scss */
 .education-header {
   text-align: center; }
 
-/* line 35, app/assets/stylesheets/_style.scss */
+/* line 40, app/assets/stylesheets/_style.scss */
+.left-head {
+  display: inline-block;
+  padding: 1em 2em; }
+
+/* line 45, app/assets/stylesheets/_style.scss */
+.right-head {
+  display: inline-block;
+  float: right;
+  padding: 1em 2em; }
+
+/* line 51, app/assets/stylesheets/_style.scss */
 .main-slider {
   color: green;
   border: 1px solid yellow; }

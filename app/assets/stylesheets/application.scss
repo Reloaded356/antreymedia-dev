@@ -14,8 +14,8 @@
  *= require_self
  */
 
- @import 
- "bourbon",
-  "style",
-  "aos",
-  "neat";
+ @import "bourbon",
+ "vars",
+ "neat",
+ "style",
+ "aos";
