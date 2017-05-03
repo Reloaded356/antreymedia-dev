@@ -23,22 +23,17 @@
     .def-neat-grid {
       width: 275px; } }
 
-/* line 12, app/assets/stylesheets/_style.scss */
-main {
-  margin-left: 1.5em;
-  margin-right: 1.5em; }
-
-/* line 17, app/assets/stylesheets/_style.scss */
+/* line 16, app/assets/stylesheets/_style.scss */
 header {
   width: 1200px;
   margin-left: auto;
   margin-right: auto; }
   @media screen and (min-width: 320px) and (max-width: 767px) {
-    /* line 17, app/assets/stylesheets/_style.scss */
+    /* line 16, app/assets/stylesheets/_style.scss */
     header {
       width: 375px; } }
 
-/* line 26, app/assets/stylesheets/_style.scss */
+/* line 25, app/assets/stylesheets/_style.scss */
 li {
   display: inline-flex;
   border: 2px solid black;
@@ -50,50 +45,54 @@ li {
   height: 3em;
   padding-top: .8em; }
   @media screen and (min-width: 320px) and (max-width: 767px) {
-    /* line 26, app/assets/stylesheets/_style.scss */
+    /* line 25, app/assets/stylesheets/_style.scss */
     li {
       width: 6em;
       padding-left: 23px; } }
 
-/* line 42, app/assets/stylesheets/_style.scss */
+/* line 41, app/assets/stylesheets/_style.scss */
 .def-neat-grid-single-col {
   width: calc(8.33333% - 2.16667em);
   float: left;
   margin-left: 2em; }
 
-/* line 46, app/assets/stylesheets/_style.scss */
+/* line 45, app/assets/stylesheets/_style.scss */
 .main-nav {
   text-align: center;
   float: right;
   padding-right: 22%; }
   @media screen and (min-width: 320px) and (max-width: 767px) {
-    /* line 46, app/assets/stylesheets/_style.scss */
+    /* line 45, app/assets/stylesheets/_style.scss */
     .main-nav {
       margin-left: auto;
       margin-right: auto;
       float: none;
       padding: 0; } }
 
-/* line 58, app/assets/stylesheets/_style.scss */
+/* line 57, app/assets/stylesheets/_style.scss */
 .work {
   text-align: center; }
 
-/* line 62, app/assets/stylesheets/_style.scss */
+/* line 61, app/assets/stylesheets/_style.scss */
 .education-header {
   text-align: center; }
 
-/* line 70, app/assets/stylesheets/_style.scss */
+/* line 69, app/assets/stylesheets/_style.scss */
 .left-head {
   display: inline-block;
-  padding: 1em 2em; }
+  padding: 1.5em 2em;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px; }
 
-/* line 78, app/assets/stylesheets/_style.scss */
+/* line 79, app/assets/stylesheets/_style.scss */
 .right-head {
   display: inline-block;
   float: right;
-  padding: 1em 2em; }
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  padding: 1.5em 2em; }
 
-/* line 87, app/assets/stylesheets/_style.scss */
+/* line 90, app/assets/stylesheets/_style.scss */
 .main-slider {
   color: green;
   border: 1px solid yellow; }
@@ -144,7 +143,7 @@ body {
 /* line 52, app/assets/stylesheets/vanilla-slider.scss */
 .slide-thump,
 .slide-details {
-  width: 50%;
+  width: 100%;
   height: 100%;
   position: relative; }
 
@@ -206,67 +205,70 @@ body {
 .slide-details {
   padding: 15vh 60px;
   text-align: center;
-  background-color: #ffffff; }
+  position: absolute;
+  top: 0em;
+  right: 19%;
+  width: 60%;
+  background-color: none; }
 
-/* line 116, app/assets/stylesheets/vanilla-slider.scss */
+/* line 120, app/assets/stylesheets/vanilla-slider.scss */
 .header {
   overflow: hidden; }
 
-/* line 120, app/assets/stylesheets/vanilla-slider.scss */
+/* line 124, app/assets/stylesheets/vanilla-slider.scss */
 .slide-details h2 {
   position: relative;
-  box-shadow: inset 0 0 0 2px #777;
+  box-shadow: inset 0 0 0 2px #fff;
   display: inline-block;
   padding: 14px 40px;
   overflow: hidden;
-  color: #555; }
+  color: #fff; }
 
-/* line 128, app/assets/stylesheets/vanilla-slider.scss */
+/* line 132, app/assets/stylesheets/vanilla-slider.scss */
 .slide-details h2:before, .slide-details h2:after {
   content: '';
   display: block;
   width: 30px;
   height: 30px;
   position: absolute;
-  background-color: #fff;
-  border: 2px solid #777;
   border-radius: 30px; }
 
-/* line 138, app/assets/stylesheets/vanilla-slider.scss */
+/* line 142, app/assets/stylesheets/vanilla-slider.scss */
 .slide-details h2:before {
   top: -15px;
   left: -15px; }
 
-/* line 142, app/assets/stylesheets/vanilla-slider.scss */
+/* line 146, app/assets/stylesheets/vanilla-slider.scss */
 .slide-details h2:after {
   top: -15px;
   left: calc(100% - 15px); }
 
 /* corners border */
-/* line 148, app/assets/stylesheets/vanilla-slider.scss */
+/* line 152, app/assets/stylesheets/vanilla-slider.scss */
 .slide-details p {
   font-size: 1.7em;
-  color: #777;
+  color: #fff;
   position: relative;
-  padding: 30px 0px; }
+  padding: 30px 0px;
+  text-shadow: 2px 2px #777; }
 
-/* line 154, app/assets/stylesheets/vanilla-slider.scss */
+/* line 159, app/assets/stylesheets/vanilla-slider.scss */
 .slide-details p:before {
   content: '';
   display: block;
   width: 100%;
   height: 3px;
-  background-color: #888;
+  background-color: #fff;
   position: absolute;
   bottom: 0;
   transform: scale3d(0.4, 1, 1);
   transition: all 1s ease; }
 
-/* line 165, app/assets/stylesheets/vanilla-slider.scss */
+/* line 170, app/assets/stylesheets/vanilla-slider.scss */
 .slide-details p:hover:before {
   transform: scale3d(0.7, 1, 1); }
 
-/* line 169, app/assets/stylesheets/vanilla-slider.scss */
+/* line 174, app/assets/stylesheets/vanilla-slider.scss */
 .slide-details button {
   margin-top: 10vh;
   padding: 10px 40px;
@@ -278,12 +280,12 @@ body {
   cursor: pointer;
   transition: background-color 1s ease-in-out, color .7s ease-in-out; }
 
-/* line 180, app/assets/stylesheets/vanilla-slider.scss */
+/* line 185, app/assets/stylesheets/vanilla-slider.scss */
 .slide-details button:hover {
   background-color: #77b5e2;
   color: #fff; }
 
-/* line 185, app/assets/stylesheets/vanilla-slider.scss */
+/* line 190, app/assets/stylesheets/vanilla-slider.scss */
 .slide-controls {
   position: absolute;
   height: 60px;
@@ -293,10 +295,11 @@ body {
   color: #fff;
   width: 200px;
   left: 0;
-  top: 50%;
-  transform: translateY(-50%); }
+  top: 98%;
+  transform: translateY(-50%);
+  left: 41.5%; }
 
-/* line 198, app/assets/stylesheets/vanilla-slider.scss */
+/* line 203, app/assets/stylesheets/vanilla-slider.scss */
 .slide-controls .left,
 .slide-controls .right {
   position: absolute;
@@ -307,44 +310,44 @@ body {
   cursor: pointer;
   transition: all 1s ease; }
 
-/* line 208, app/assets/stylesheets/vanilla-slider.scss */
+/* line 213, app/assets/stylesheets/vanilla-slider.scss */
 .slide-controls .left:hover,
 .slide-controls .right:hover {
   background-color: rgba(0, 0, 0, 0.7); }
 
-/* line 213, app/assets/stylesheets/vanilla-slider.scss */
+/* line 218, app/assets/stylesheets/vanilla-slider.scss */
 .slide-controls .right {
   right: 0; }
 
 /* slides aniamtion */
-/* line 218, app/assets/stylesheets/vanilla-slider.scss */
+/* line 223, app/assets/stylesheets/vanilla-slider.scss */
 .slide .slide-thump,
 .slide-details .header,
 .slide-details p {
   transition: all 1s ease; }
 
-/* line 224, app/assets/stylesheets/vanilla-slider.scss */
+/* line 229, app/assets/stylesheets/vanilla-slider.scss */
 .slide .slide-thump {
   transform: translate3d(0, -100%, 1px);
   transition-delay: 0s; }
 
-/* line 229, app/assets/stylesheets/vanilla-slider.scss */
+/* line 234, app/assets/stylesheets/vanilla-slider.scss */
 .slide-details .header {
   transform: translate3d(0, 200%, 1px);
   transition: all 1s linear;
   transition-delay: 0.75s; }
 
-/* line 235, app/assets/stylesheets/vanilla-slider.scss */
+/* line 240, app/assets/stylesheets/vanilla-slider.scss */
 .slide-details p {
   transform: scale3d(0, 0, 1);
   transition-delay: 1.5s; }
 
-/* line 240, app/assets/stylesheets/vanilla-slider.scss */
+/* line 245, app/assets/stylesheets/vanilla-slider.scss */
 .slide.active .slide-thump,
 .slide.active .slide-details .header {
   transform: translate3d(0, 0, 1px); }
 
-/* line 245, app/assets/stylesheets/vanilla-slider.scss */
+/* line 250, app/assets/stylesheets/vanilla-slider.scss */
 .slide.active .slide-details p {
   transform: scale3d(1, 1, 1); }
 
