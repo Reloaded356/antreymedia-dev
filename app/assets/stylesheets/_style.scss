@@ -22,14 +22,20 @@ header {
   }
 }
 
-li {
-  display: inline-flex;
+ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+
+ul > li {
+  display: inline-block;
   border: 2px solid black;
   width: 8em;
   margin-top: 1em;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 35px;
+  margin-left: 1em;
   height: 3em;
   padding-top: .8em;
   @include grid-media($mobile) {
@@ -38,11 +44,13 @@ li {
   }
 }
 
+
 .def-neat-grid-single-col {
   @include grid-column(1);
 }
 
 .main-nav {
+  display: table;
   text-align: center;
   float: right;
   padding-right: 22%;
@@ -88,6 +96,5 @@ li {
 }
 
 .main-slider {
-  color: green;
-  border: 1px solid yellow;
+
 }
