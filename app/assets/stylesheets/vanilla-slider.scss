@@ -1,3 +1,5 @@
+@import "neat", "vars";
+
 $background-color: #ffffff;
 $corner-width: 30px;
 $corner-overlay-pos: $corner-width / 2;
@@ -116,6 +118,10 @@ body {
   right: 19%;
   width: 60%;
   background-color: none;
+  @include grid-media($mobile) {
+    right: 0%;
+    width: 100%;
+  }
 }
 
 .header {
@@ -129,6 +135,9 @@ body {
   padding: 14px 40px;
   overflow: hidden;
   color: #fff;
+  @include grid-media($mobile) {
+    width: 100%;
+  }
 }
 .slide-details h2:before, .slide-details h2:after {
   content: '';

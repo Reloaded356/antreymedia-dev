@@ -10,7 +10,9 @@
 }
 
 main {
-
+  @include grid-media($mobile) {
+    width: 100%;
+  }
 }
 
 header {
@@ -22,22 +24,25 @@ header {
   }
 }
 
-ul {
+ul.nav {
   list-style: none;
   padding: 0;
   display: flex;
   justify-content: space-around;
 }
 
+.nav > li > a:hover, .nav > li > a:focus {
+  background-color: inherit;
+}
 
-ul > li {
+
+ul.nav > li {
   display: inline-block;
   border: 2px solid black;
   width: 8em;
   margin-top: 1em;
   margin-left: 1em;
   height: 3em;
-  padding-top: .8em;
   @include grid-media($mobile) {
     width: 6em;
     padding-left: 23px;

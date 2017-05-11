@@ -23,74 +23,82 @@
     .def-neat-grid {
       width: 275px; } }
 
-/* line 16, app/assets/stylesheets/_style.scss */
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  /* line 12, app/assets/stylesheets/_style.scss */
+  main {
+    width: 100%; } }
+
+/* line 18, app/assets/stylesheets/_style.scss */
 header {
   width: 1200px;
   margin-left: auto;
   margin-right: auto; }
   @media screen and (min-width: 320px) and (max-width: 767px) {
-    /* line 16, app/assets/stylesheets/_style.scss */
+    /* line 18, app/assets/stylesheets/_style.scss */
     header {
       width: 375px; } }
 
-/* line 25, app/assets/stylesheets/_style.scss */
-ul {
+/* line 27, app/assets/stylesheets/_style.scss */
+ul.nav {
   list-style: none;
   padding: 0;
   display: flex;
   justify-content: space-around; }
 
-/* line 33, app/assets/stylesheets/_style.scss */
-ul > li {
+/* line 34, app/assets/stylesheets/_style.scss */
+.nav > li > a:hover, .nav > li > a:focus {
+  background-color: inherit; }
+
+/* line 39, app/assets/stylesheets/_style.scss */
+ul.nav > li {
   display: inline-block;
   border: 2px solid black;
   width: 8em;
   margin-top: 1em;
   margin-left: 1em;
-  height: 3em;
-  padding-top: .8em; }
+  height: 3em; }
   @media screen and (min-width: 320px) and (max-width: 767px) {
-    /* line 33, app/assets/stylesheets/_style.scss */
-    ul > li {
+    /* line 39, app/assets/stylesheets/_style.scss */
+    ul.nav > li {
       width: 6em;
       padding-left: 23px; } }
 
-/* line 48, app/assets/stylesheets/_style.scss */
+/* line 53, app/assets/stylesheets/_style.scss */
 .def-neat-grid-single-col {
   width: calc(8.33333% - 2.16667em);
   float: left;
   margin-left: 2em; }
 
-/* line 52, app/assets/stylesheets/_style.scss */
+/* line 57, app/assets/stylesheets/_style.scss */
 .main-nav {
   display: table;
   text-align: center;
   float: right;
   padding-right: 22%; }
   @media screen and (min-width: 320px) and (max-width: 767px) {
-    /* line 52, app/assets/stylesheets/_style.scss */
+    /* line 57, app/assets/stylesheets/_style.scss */
     .main-nav {
       margin-left: auto;
       margin-right: auto;
       float: none;
       padding: 0; } }
 
-/* line 65, app/assets/stylesheets/_style.scss */
+/* line 70, app/assets/stylesheets/_style.scss */
 .work {
   text-align: center; }
 
-/* line 69, app/assets/stylesheets/_style.scss */
+/* line 74, app/assets/stylesheets/_style.scss */
 .education-header {
   text-align: center; }
 
-/* line 77, app/assets/stylesheets/_style.scss */
+/* line 82, app/assets/stylesheets/_style.scss */
 .left-head {
   display: inline-block;
   padding: 1.5em 2em;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px; }
 
-/* line 87, app/assets/stylesheets/_style.scss */
+/* line 92, app/assets/stylesheets/_style.scss */
 .right-head {
   display: inline-block;
   float: right;
@@ -98,35 +106,35 @@ ul > li {
   font-size: 14px;
   padding: 1.5em 2em; }
 
-/* line 9, app/assets/stylesheets/vanilla-slider.scss */
+/* line 11, app/assets/stylesheets/vanilla-slider.scss */
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box; }
 
-/* line 15, app/assets/stylesheets/vanilla-slider.scss */
+/* line 17, app/assets/stylesheets/vanilla-slider.scss */
 body {
   width: 100%;
   background-color: #ffffff;
   user-select: none; }
 
-/* line 21, app/assets/stylesheets/vanilla-slider.scss */
+/* line 23, app/assets/stylesheets/vanilla-slider.scss */
 .clearfix:after {
   content: '';
   display: block;
   clear: both; }
 
-/* line 27, app/assets/stylesheets/vanilla-slider.scss */
+/* line 29, app/assets/stylesheets/vanilla-slider.scss */
 .slider-container {
   width: 100%;
   overflow: hidden;
   position: relative; }
 
-/* line 33, app/assets/stylesheets/vanilla-slider.scss */
+/* line 35, app/assets/stylesheets/vanilla-slider.scss */
 .slider-outer {
   height: 100%; }
 
-/* line 38, app/assets/stylesheets/vanilla-slider.scss */
+/* line 40, app/assets/stylesheets/vanilla-slider.scss */
 .slide {
   width: 100%;
   height: 100vh;
@@ -135,24 +143,24 @@ body {
   overflow: hidden;
   position: relative; }
 
-/* line 47, app/assets/stylesheets/vanilla-slider.scss */
+/* line 49, app/assets/stylesheets/vanilla-slider.scss */
 .slide-thump,
 .slide-details {
   float: left; }
 
-/* line 52, app/assets/stylesheets/vanilla-slider.scss */
+/* line 54, app/assets/stylesheets/vanilla-slider.scss */
 .slide-thump,
 .slide-details {
   width: 100%;
   height: 100%;
   position: relative; }
 
-/* line 59, app/assets/stylesheets/vanilla-slider.scss */
+/* line 61, app/assets/stylesheets/vanilla-slider.scss */
 .slide-thump img {
   width: 100%;
   height: 100%; }
 
-/* line 64, app/assets/stylesheets/vanilla-slider.scss */
+/* line 66, app/assets/stylesheets/vanilla-slider.scss */
 .overlay {
   position: absolute;
   top: 0;
@@ -165,7 +173,7 @@ body {
   transition: all 3s ease;
   background-color: rgba(0, 0, 0, 0.7); }
 
-/* line 76, app/assets/stylesheets/vanilla-slider.scss */
+/* line 78, app/assets/stylesheets/vanilla-slider.scss */
 .overlay:before, .overlay:after {
   content: '';
   display: block;
@@ -177,24 +185,24 @@ body {
   transition: all 1s ease;
   color: #b1b1b1; }
 
-/* line 87, app/assets/stylesheets/vanilla-slider.scss */
+/* line 89, app/assets/stylesheets/vanilla-slider.scss */
 .overlay:before {
   border-left: 1px solid;
   border-right: 1px solid;
   transform: scale3d(1, 0, 1); }
 
-/* line 92, app/assets/stylesheets/vanilla-slider.scss */
+/* line 94, app/assets/stylesheets/vanilla-slider.scss */
 .overlay:after {
   border-top: 1px solid;
   border-bottom: 1px solid;
   transform: scale3d(0, 1, 1); }
 
-/* line 98, app/assets/stylesheets/vanilla-slider.scss */
+/* line 100, app/assets/stylesheets/vanilla-slider.scss */
 .slide-thump .overlay:before,
 .slide-thump .overlay:after {
   transform: scale3d(1, 1, 1); }
 
-/* line 103, app/assets/stylesheets/vanilla-slider.scss */
+/* line 105, app/assets/stylesheets/vanilla-slider.scss */
 .slide-thump:hover .overlay {
   transition: all 1s ease;
   background-color: rgba(0, 0, 0, 0.7); }
@@ -202,7 +210,7 @@ body {
 /*--------------
  slide details
 ---------------*/
-/* line 111, app/assets/stylesheets/vanilla-slider.scss */
+/* line 113, app/assets/stylesheets/vanilla-slider.scss */
 .slide-details {
   padding: 15vh 60px;
   text-align: center;
@@ -211,12 +219,17 @@ body {
   right: 19%;
   width: 60%;
   background-color: none; }
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    /* line 113, app/assets/stylesheets/vanilla-slider.scss */
+    .slide-details {
+      right: 0%;
+      width: 100%; } }
 
-/* line 121, app/assets/stylesheets/vanilla-slider.scss */
+/* line 127, app/assets/stylesheets/vanilla-slider.scss */
 .header {
   overflow: hidden; }
 
-/* line 125, app/assets/stylesheets/vanilla-slider.scss */
+/* line 131, app/assets/stylesheets/vanilla-slider.scss */
 .slide-details h2 {
   position: relative;
   box-shadow: inset 0 0 0 2px #fff;
@@ -224,8 +237,12 @@ body {
   padding: 14px 40px;
   overflow: hidden;
   color: #fff; }
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    /* line 131, app/assets/stylesheets/vanilla-slider.scss */
+    .slide-details h2 {
+      width: 100%; } }
 
-/* line 133, app/assets/stylesheets/vanilla-slider.scss */
+/* line 142, app/assets/stylesheets/vanilla-slider.scss */
 .slide-details h2:before, .slide-details h2:after {
   content: '';
   display: block;
@@ -234,18 +251,18 @@ body {
   position: absolute;
   border-radius: 30px; }
 
-/* line 143, app/assets/stylesheets/vanilla-slider.scss */
+/* line 152, app/assets/stylesheets/vanilla-slider.scss */
 .slide-details h2:before {
   top: -15px;
   left: -15px; }
 
-/* line 147, app/assets/stylesheets/vanilla-slider.scss */
+/* line 156, app/assets/stylesheets/vanilla-slider.scss */
 .slide-details h2:after {
   top: -15px;
   left: calc(100% - 15px); }
 
 /* corners border */
-/* line 153, app/assets/stylesheets/vanilla-slider.scss */
+/* line 162, app/assets/stylesheets/vanilla-slider.scss */
 .slide-details p {
   font-size: 1.3em;
   color: #fff;
@@ -253,7 +270,7 @@ body {
   padding: 30px 0px;
   text-shadow: 2px 2px #777; }
 
-/* line 160, app/assets/stylesheets/vanilla-slider.scss */
+/* line 169, app/assets/stylesheets/vanilla-slider.scss */
 .slide-details p:before {
   content: '';
   display: block;
@@ -265,11 +282,11 @@ body {
   transform: scale3d(0.4, 1, 1);
   transition: all 1s ease; }
 
-/* line 171, app/assets/stylesheets/vanilla-slider.scss */
+/* line 180, app/assets/stylesheets/vanilla-slider.scss */
 .slide-details p:hover:before {
   transform: scale3d(0.7, 1, 1); }
 
-/* line 175, app/assets/stylesheets/vanilla-slider.scss */
+/* line 184, app/assets/stylesheets/vanilla-slider.scss */
 .slide-details button {
   margin-top: 10vh;
   padding: 10px 40px;
@@ -281,12 +298,12 @@ body {
   cursor: pointer;
   transition: background-color 1s ease-in-out, color .7s ease-in-out; }
 
-/* line 186, app/assets/stylesheets/vanilla-slider.scss */
+/* line 195, app/assets/stylesheets/vanilla-slider.scss */
 .slide-details button:hover {
   background-color: #77b5e2;
   color: #fff; }
 
-/* line 191, app/assets/stylesheets/vanilla-slider.scss */
+/* line 200, app/assets/stylesheets/vanilla-slider.scss */
 .slide-controls {
   position: absolute;
   height: 60px;
@@ -300,7 +317,7 @@ body {
   transform: translateY(-50%);
   left: 42.5%; }
 
-/* line 204, app/assets/stylesheets/vanilla-slider.scss */
+/* line 213, app/assets/stylesheets/vanilla-slider.scss */
 .slide-controls .left,
 .slide-controls .right {
   position: absolute;
@@ -311,44 +328,44 @@ body {
   cursor: pointer;
   transition: all 1s ease; }
 
-/* line 214, app/assets/stylesheets/vanilla-slider.scss */
+/* line 223, app/assets/stylesheets/vanilla-slider.scss */
 .slide-controls .left:hover,
 .slide-controls .right:hover {
   background-color: rgba(0, 0, 0, 0.7); }
 
-/* line 219, app/assets/stylesheets/vanilla-slider.scss */
+/* line 228, app/assets/stylesheets/vanilla-slider.scss */
 .slide-controls .right {
   right: 0; }
 
 /* slides aniamtion */
-/* line 224, app/assets/stylesheets/vanilla-slider.scss */
+/* line 233, app/assets/stylesheets/vanilla-slider.scss */
 .slide .slide-thump,
 .slide-details .header,
 .slide-details p {
   transition: all 1s ease; }
 
-/* line 230, app/assets/stylesheets/vanilla-slider.scss */
+/* line 239, app/assets/stylesheets/vanilla-slider.scss */
 .slide .slide-thump {
   transform: translate3d(0, -100%, 1px);
   transition-delay: 0s; }
 
-/* line 235, app/assets/stylesheets/vanilla-slider.scss */
+/* line 244, app/assets/stylesheets/vanilla-slider.scss */
 .slide-details .header {
   transform: translate3d(0, 200%, 1px);
   transition: all 1s linear;
   transition-delay: 0.75s; }
 
-/* line 241, app/assets/stylesheets/vanilla-slider.scss */
+/* line 250, app/assets/stylesheets/vanilla-slider.scss */
 .slide-details p {
   transform: scale3d(0, 0, 1);
   transition-delay: 1.5s; }
 
-/* line 246, app/assets/stylesheets/vanilla-slider.scss */
+/* line 255, app/assets/stylesheets/vanilla-slider.scss */
 .slide.active .slide-thump,
 .slide.active .slide-details .header {
   transform: translate3d(0, 0, 1px); }
 
-/* line 251, app/assets/stylesheets/vanilla-slider.scss */
+/* line 260, app/assets/stylesheets/vanilla-slider.scss */
 .slide.active .slide-details p {
   transform: scale3d(1, 1, 1); }
 
