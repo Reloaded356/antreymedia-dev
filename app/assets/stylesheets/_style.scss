@@ -1,17 +1,26 @@
 @import "neat", "vars";
 
+html {
+  @include grid-media($mobile) {
+    width: 400px;
+    overflow-x: hidden;
+  }
+}
+
 .def-neat-grid {
   width: 1200px;
   margin-left: auto;
   margin-right: auto;
   @include grid-media($mobile) {
     width: 275px;
+    margin: 0;
   }
 }
 
 main {
   @include grid-media($mobile) {
     width: 100%;
+    padding-left: 1.5em;
   }
 }
 
@@ -29,10 +38,13 @@ ul.nav {
   padding: 0;
   display: flex;
   justify-content: space-around;
+  @include grid-media($mobile) {
+    display: inline-grid;
+  }
 }
 
 .nav > li > a:hover, .nav > li > a:focus {
-  background-color: inherit;
+  padding: 9px 15px;
 }
 
 
@@ -44,8 +56,8 @@ ul.nav > li {
   margin-left: 1em;
   height: 3em;
   @include grid-media($mobile) {
-    width: 6em;
-    padding-left: 23px;
+    width: 19em;
+    padding-left: 0px;
   }
 }
 
@@ -60,8 +72,7 @@ ul.nav > li {
   float: right;
   padding-right: 22%;
   @include grid-media($mobile) {
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0;
     float: none;
     padding: 0;
   }
@@ -85,7 +96,7 @@ ul.nav > li {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
   @include grid-media($mobile) {
-
+    padding: 1.5em 2em 1em 0em;
   }
 }
 
@@ -96,7 +107,7 @@ ul.nav > li {
   font-size: 14px;
   padding: 1.5em 2em;
   @include grid-media($mobile) {
-
+    padding: 1.5em 6em 0em 0em;
   }
 }
 

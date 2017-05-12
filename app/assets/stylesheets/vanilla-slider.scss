@@ -30,6 +30,9 @@ body {
   width: 100%;
   overflow: hidden;
   position: relative;
+  @include grid-media($mobile) {
+    font-size: .5rem;
+  }
 }
 
 .slider-outer {
@@ -137,6 +140,7 @@ body {
   color: #fff;
   @include grid-media($mobile) {
     width: 100%;
+    font-size: 2em;
   }
 }
 .slide-details h2:before, .slide-details h2:after {
@@ -191,6 +195,9 @@ body {
   border: 1px solid #77b5e2;
   cursor: pointer;
   transition: background-color 1s ease-in-out, color .7s ease-in-out;
+  @include grid-media($mobile) {
+    margin-top: 0vh;
+  }
 }
 .slide-details button:hover {
   background-color: #77b5e2;
@@ -209,6 +216,9 @@ body {
     top: 98%;
     transform: translateY(-50%);
     left: 42.5%;
+    @include grid-media($mobile) {
+      left: 13.5%;
+    }
 }
 .slide-controls .left,
 .slide-controls .right {
