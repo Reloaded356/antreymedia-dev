@@ -63,7 +63,10 @@ body {
 
 .slide-thump img {
   width: 100%;
-  height: auto;
+  height: 100%;
+  @include grid-media($mobile) {
+    height: auto;
+  }
 }
 
 .overlay {
