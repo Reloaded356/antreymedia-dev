@@ -65,7 +65,7 @@ body {
   width: 100%;
   height: 100%;
   @include grid-media($mobile) {
-    height: auto;
+    height: auto; 
   }
 }
 
