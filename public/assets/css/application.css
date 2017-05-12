@@ -16,7 +16,7 @@
 @media screen and (min-width: 320px) and (max-width: 767px) {
   /* line 3, app/assets/stylesheets/_style.scss */
   html {
-    width: 400px;
+    width: 320px;
     overflow-x: hidden; } }
 
 /* line 10, app/assets/stylesheets/_style.scss */
@@ -44,7 +44,7 @@ header {
   @media screen and (min-width: 320px) and (max-width: 767px) {
     /* line 27, app/assets/stylesheets/_style.scss */
     header {
-      width: 375px; } }
+      width: 100%; } }
 
 /* line 36, app/assets/stylesheets/_style.scss */
 ul.nav {
@@ -90,7 +90,7 @@ ul.nav > li {
   @media screen and (min-width: 320px) and (max-width: 767px) {
     /* line 69, app/assets/stylesheets/_style.scss */
     .main-nav {
-      margin: 0;
+      margin: auto;
       float: none;
       padding: 0; } }
 
@@ -111,7 +111,7 @@ ul.nav > li {
   @media screen and (min-width: 320px) and (max-width: 767px) {
     /* line 93, app/assets/stylesheets/_style.scss */
     .left-head {
-      padding: 1.5em 2em 1em 0em; } }
+      padding: 1.5em 1em 1em 1em; } }
 
 /* line 103, app/assets/stylesheets/_style.scss */
 .right-head {
@@ -123,7 +123,7 @@ ul.nav > li {
   @media screen and (min-width: 320px) and (max-width: 767px) {
     /* line 103, app/assets/stylesheets/_style.scss */
     .right-head {
-      padding: 1.5em 6em 0em 0em; } }
+      padding: 1.5em 1em 0em 0em; } }
 
 /* line 11, app/assets/stylesheets/vanilla-slider.scss */
 * {

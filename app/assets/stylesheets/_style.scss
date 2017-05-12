@@ -2,7 +2,7 @@
 
 html {
   @include grid-media($mobile) {
-    width: 400px;
+    width: 320px;
     overflow-x: hidden;
   }
 }
@@ -29,7 +29,7 @@ header {
   margin-left: auto;
   margin-right: auto;
   @include grid-media($mobile) {
-    width: 375px;
+    width: 100%;
   }
 }
 
@@ -72,7 +72,7 @@ ul.nav > li {
   float: right;
   padding-right: 22%;
   @include grid-media($mobile) {
-    margin: 0;
+    margin: auto;
     float: none;
     padding: 0;
   }
@@ -96,7 +96,7 @@ ul.nav > li {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
   @include grid-media($mobile) {
-    padding: 1.5em 2em 1em 0em;
+    padding: 1.5em 1em 1em 1em;
   }
 }
 
@@ -107,7 +107,7 @@ ul.nav > li {
   font-size: 14px;
   padding: 1.5em 2em;
   @include grid-media($mobile) {
-    padding: 1.5em 6em 0em 0em;
+    padding: 1.5em 1em 0em 0em;
   }
 }
 
