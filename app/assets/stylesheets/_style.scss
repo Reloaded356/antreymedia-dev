@@ -2,17 +2,17 @@
 
 html {
   @include grid-media($mobile) {
-    width: 320px;
+    // width: 320px;
     overflow-x: hidden;
   }
 }
 
 .def-neat-grid {
-  width: 1200px;
+  // width: 1200px;
   margin-left: auto;
   margin-right: auto;
   @include grid-media($mobile) {
-    width: 275px;
+    // width: 275px;
     margin: 0;
   }
 }
