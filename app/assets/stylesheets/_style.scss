@@ -25,7 +25,7 @@ main {
 }
 
 header {
-  width: 1200px;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
   @include grid-media($mobile) {
@@ -69,11 +69,9 @@ ul.nav > li {
 .main-nav {
   display: table;
   text-align: center;
-  float: right;
-  padding-right: 22%;
+  margin-left: auto;
+  margin-right: auto;
   @include grid-media($mobile) {
-    margin: auto;
-    float: none;
     padding: 0;
   }
 }
