@@ -30,39 +30,40 @@
 /* line 20, app/assets/stylesheets/_style.scss */
 main {
   margin: auto;
-  display: inline-flex; }
+  display: inline-flex;
+  padding: 2em; }
   @media screen and (min-width: 320px) and (max-width: 767px) {
     /* line 20, app/assets/stylesheets/_style.scss */
     main {
       width: 100%;
       padding-left: 1.5em; } }
 
-/* line 29, app/assets/stylesheets/_style.scss */
+/* line 30, app/assets/stylesheets/_style.scss */
 header {
   width: 100%;
   margin-left: auto;
   margin-right: auto; }
   @media screen and (min-width: 320px) and (max-width: 767px) {
-    /* line 29, app/assets/stylesheets/_style.scss */
+    /* line 30, app/assets/stylesheets/_style.scss */
     header {
       width: 100%; } }
 
-/* line 38, app/assets/stylesheets/_style.scss */
+/* line 39, app/assets/stylesheets/_style.scss */
 ul.nav {
   list-style: none;
   padding: 0;
   display: flex;
   justify-content: space-around; }
   @media screen and (min-width: 320px) and (max-width: 767px) {
-    /* line 38, app/assets/stylesheets/_style.scss */
+    /* line 39, app/assets/stylesheets/_style.scss */
     ul.nav {
       display: inline-grid; } }
 
-/* line 48, app/assets/stylesheets/_style.scss */
+/* line 49, app/assets/stylesheets/_style.scss */
 .nav > li > a:hover, .nav > li > a:focus {
   padding: 9px 15px; }
 
-/* line 53, app/assets/stylesheets/_style.scss */
+/* line 54, app/assets/stylesheets/_style.scss */
 ul.nav > li {
   display: inline-block;
   border: 2px solid black;
@@ -71,48 +72,48 @@ ul.nav > li {
   margin-left: 1em;
   height: 3em; }
   @media screen and (min-width: 320px) and (max-width: 767px) {
-    /* line 53, app/assets/stylesheets/_style.scss */
+    /* line 54, app/assets/stylesheets/_style.scss */
     ul.nav > li {
       width: 19em;
       padding-left: 0px; } }
 
-/* line 67, app/assets/stylesheets/_style.scss */
+/* line 68, app/assets/stylesheets/_style.scss */
 .def-neat-grid-single-col {
   width: calc(8.33333% - 2.16667em);
   float: left;
   margin-left: 2em; }
 
-/* line 71, app/assets/stylesheets/_style.scss */
+/* line 72, app/assets/stylesheets/_style.scss */
 .main-nav {
   display: table;
   text-align: center;
   margin-left: auto;
   margin-right: auto; }
   @media screen and (min-width: 320px) and (max-width: 767px) {
-    /* line 71, app/assets/stylesheets/_style.scss */
+    /* line 72, app/assets/stylesheets/_style.scss */
     .main-nav {
       padding: 0; } }
 
-/* line 81, app/assets/stylesheets/_style.scss */
+/* line 82, app/assets/stylesheets/_style.scss */
 .work {
   text-align: center; }
 
-/* line 85, app/assets/stylesheets/_style.scss */
+/* line 86, app/assets/stylesheets/_style.scss */
 .education-header {
   text-align: center; }
 
-/* line 93, app/assets/stylesheets/_style.scss */
+/* line 94, app/assets/stylesheets/_style.scss */
 .left-head {
   display: inline-block;
   padding: 1.5em 2em;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px; }
   @media screen and (min-width: 320px) and (max-width: 767px) {
-    /* line 93, app/assets/stylesheets/_style.scss */
+    /* line 94, app/assets/stylesheets/_style.scss */
     .left-head {
       padding: 1.5em 1em 1em 1em; } }
 
-/* line 103, app/assets/stylesheets/_style.scss */
+/* line 104, app/assets/stylesheets/_style.scss */
 .right-head {
   display: inline-block;
   float: right;
@@ -120,7 +121,7 @@ ul.nav > li {
   font-size: 14px;
   padding: 1.5em 2em; }
   @media screen and (min-width: 320px) and (max-width: 767px) {
-    /* line 103, app/assets/stylesheets/_style.scss */
+    /* line 104, app/assets/stylesheets/_style.scss */
     .right-head {
       padding: 1.5em 1em 0em 0em; } }
 

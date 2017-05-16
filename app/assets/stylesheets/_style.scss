@@ -20,6 +20,7 @@ html {
 main {
   margin: auto;
   display: inline-flex;
+  padding: 2em;
   @include grid-media($mobile) {
     width: 100%;
     padding-left: 1.5em;
