@@ -18,6 +18,8 @@ html {
 }
 
 main {
+  margin: auto;
+  display: inline-flex;
   @include grid-media($mobile) {
     width: 100%;
     padding-left: 1.5em;
